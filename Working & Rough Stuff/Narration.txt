@@ -1,0 +1,9 @@
+First, the keywords pertaining to the product is taken from the user. Then, the user's social network is analyzed to rank the people according to the product's payoff for them. Subsequently, the impact which the highest ranked person's have over their network is computed. All this data is finally utilized to create diffrent cascading scenarios and get a list of initial adopters which result in maximum penetration of the user's product.
+
+The problem which this project addresses basically revolves around targetting the correct audience for publicizing a given product or commodity. 
+
+For example, if you're starting a new shoe company, this software will in essence suggest you those people in your social network to whom you should give a free sample of your shoes so as to maximize its popularity
+
+The data required to implement this project will include the details of the friends on the user's friend list and their social network activity. This includes likes, comments, shares and status posts. This will be utilized to calculate mainly the product payoff for each friend and the edge weights between the friends. The Facebook API will be used to obtain data. Also, the like data from the public pages which the user's friends have followed will be incorporated.
+
+Modules handling app to facebook communication are expected to be completed by 24th of this month. Next on, implementation of the algorithms to compute product payoffs and the edge-weights pertaining to each friend to friend link will be completed by 31st of October. The UI creation and the integration of front-end with back-end is expected to be done by November 7th followed by final tests and debugging which is expected to be completed by the 14th of November. The final documentation is expected by November 21st.

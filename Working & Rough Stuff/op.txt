@@ -1,0 +1,125 @@
+>>> tCom.my_friends_filtered[0]
+{u'follow_request_sent': False, u'has_extended_profile': False, u'profile_use_background_image': True, u'default_profile_image': True, u'id': 392958537, u'profile_background_image_url_https': u'https://abs.twimg.com/images/themes/theme1/bg.png', u'verified': False, u'blocked_by': False, u'profile_text_color': u'333333', u'muting': False, u'profile_image_url_https': u'https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png', u'profile_sidebar_fill_color': u'DDEEF6', u'entities': {u'description': {u'urls': []}}, u'followers_count': 2, u'profile_sidebar_border_color': u'C0DEED', u'id_str': u'392958537', u'profile_background_color': u'C0DEED', u'listed_count': 0, u'status': {u'lang': u'en', u'favorited': False, u'entities': {u'symbols': [], u'user_mentions': [{u'id': 121974351, u'indices': [0, 15], u'id_str': u'121974351', u'screen_name': u'Purushottam014', u'name': u'Purushottam'}], u'hashtags': [], u'urls': []}, u'contributors': None, u'truncated': False, u'text': u"@purushottam014 happy b'day sunny.sorry 4 wishing late:-)", u'created_at': u'Wed Oct 19 11:21:10 +0000 2011', u'retweeted': False, u'in_reply_to_status_id_str': None, u'coordinates': None, u'in_reply_to_user_id_str': u'121974351', u'source': u'<a href="http://mobile.twitter.com" rel="nofollow">Mobile Web</a>', u'in_reply_to_status_id': None, u'in_reply_to_screen_name': u'Purushottam014', u'id_str': u'126618890108276736', u'place': None, u'retweet_count': 0, u'geo': None, u'id': 126618890108276736L, u'favorite_count': 0, u'in_reply_to_user_id': 121974351}, u'is_translation_enabled': False, u'utc_offset': None, u'statuses_count': 1, u'description': u'', u'friends_count': 1, u'location': u'', u'profile_link_color': u'0084B4', u'profile_image_url': u'http://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png', u'following': True, u'geo_enabled': False, u'blocking': False, u'profile_background_image_url': u'http://abs.twimg.com/images/themes/theme1/bg.png', u'screen_name': u'sowmyaa15rosee', u'lang': u'en', u'profile_background_tile': False, u'favourites_count': 0, u'name': u'Sowmyaa Sukriti', u'notifications': False, u'url': None, u'created_at': u'Mon Oct 17 20:25:11 +0000 2011', u'contributors_enabled': False, u'time_zone': None, u'protected': False, u'default_profile': True, u'is_translator': False}
+>>> tCom.my_friends_filtered[0]['name']
+u'Sowmyaa Sukriti'
+>>> for f in tCom.my_friends_filtered:
+...     avg = avg + t['followers_count']
+... 
+Traceback (most recent call last):
+  File "<debug input>", line 2, in <module>
+NameError: name 't' is not defined
+>>> for f in tCom.my_friends_filtered:
+...     avg = avg + f['followers_count']
+... 
+>>> avg
+3485308
+>>> avg/77
+45263
+>>> for f in tCom.my_friends_filtered:
+...     print f['name'], f['followers_count']
+... 
+Sowmyaa Sukriti 2
+Arunagiri 41
+yashwant singh 6
+VK Singh 142
+Woeigo 2523
+Barnam Bora 248
+Nitesh Shukla 82
+Kulbeer singh sidhu 128
+JITIN ARORA 50
+riculic 1
+Smallpdf 6583
+BAJAAO 2246
+IIT-Computer Science 117
+IIT ML Lab 31
+Mustafa Bilgic 331
+IEEE @ Illinois Tech 348
+Collective Evolution 47156
+Tom Nichols 11676
+So Delhi 11750
+Tanya Puri 149
+Mohana Krishna 10
+Ankush Venkatesh 103
+arjun saxena 54
+Anurag Jain 24
+Manohar V.V.Golla 97
+Shriharsha K Konda 74
+FunnyOneLiners 895783
+manish jha 65
+Shubham Singh 55
+Deblina Das 1130
+Shrey Chadha 51
+Praveen Kumar 19
+The TeKKI 12
+Raja Venkata Krishna 17
+Anshu Srivastava 6
+sanya arora 10
+Arnab Das 5
+Rajul Prakash Gupta 16
+onlineTPS[dot]com 424
+Sapan Agrawal 117
+Manas Yadav 6
+lakhan karira 4
+NISHANT OJHA 7
+Shiwani 21
+Prateek Khatri 32
+Vibhore Agarwal 5
+Vibhore Agarwal 13
+Shashank Yadav 22
+Vineet Mishra 25
+Nishit 91
+Samarth Setia 159
+Neha Tayal 8
+Aditya Prasun 94
+Sheetal Dubey 54
+Karan Chowdhary 243
+Vaibhav Ailawadi 56
+Govind Gupta 137
+Haja Sheriff 3899
+Nilanjan Bhattachary 132
+Eshita Thukral 442
+Sheshank Bikal 19
+Eklavya Malvai 108
+Sumit Gupta 371
+Anish Vohra 127
+Ayush 61
+Niharika Singh 41
+Jatin Chopra 26
+Shubhankar Biswas 23
+Chef Vicky Ratnani 50810
+Shlok Shukla 77
+Dakshayani Saxena 61
+Varun Singh Thapa 115
+RestaurantWeekIndia 47657
+Abhi Sethi 129
+FoodFood 255303
+The Hindu 1946978
+Yash Shk 81
+Chef Ritu Dalmia 196189
+>>> lol=tCom.robust_request(tCom.twitterObject, ''friends/list', {'screen_name': 'Arunagiri_Gurgn', 'count': 200})
+  File "<debug input>", line 1
+    lol=tCom.robust_request(tCom.twitterObject, ''friends/list', {'screen_name': 'Arunagiri_Gurgn', 'count': 200})
+                                                        ^
+SyntaxError: invalid syntax
+>>> lol=tCom.robust_request(tCom.twitterObject, 'friends/list', {'screen_name': "Arunagiri_Gurgn", 'count': 200})
+>>> lol
+<TwitterAPI.TwitterAPI.TwitterResponse object at 0x035A8590>
+>>> haha
+Traceback (most recent call last):
+  File "<debug input>", line 1, in <module>
+NameError: name 'haha' is not defined
+>>> haha = None
+>>> haha = list()
+>>> for l in lol.get_iterator():
+...     haha.append(l['name']
+... 
+  File "<debug input>", line 3
+    
+    ^
+SyntaxError: invalid syntax
+>>> for l in lol.get_iterator():
+...     haha.append(l['name'])
+... 
+>>> haha
+[u'Teachers of India', u'Kalyan Sridhar', u'Joice Fernandes', u'vembar balasubramani', u'Shashi Tharoor', u'Haja Sheriff', u'Lokesh Mehra', u'Lumia', u'Shape The Future', u'Microsoft', u'Tony Time TeachTec', u'Pradeep Kumaran A M']
+>>> 

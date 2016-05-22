@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>aea5f428-4077-4211-bb08-bc9686cbfe62</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>biznesExp_Twitter.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>biznesExp_Twitter</Name>
+    <RootNamespace>biznesExp_Twitter</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="biznesExp_Twitter.py" />
+    <Compile Include="Headers\NetworkData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headers\Payoff\DataCruncher.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headers\Payoff\BingScraper.py" />
+    <Compile Include="Headers\Payoff\GoogleScraper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headers\Payoff\PayoffCalculator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headers\Payoff\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headers\TwitterCommunicator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Headers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Headers\" />
+    <Folder Include="Headers\Payoff\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

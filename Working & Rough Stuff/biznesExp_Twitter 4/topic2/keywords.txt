@@ -1,0 +1,1 @@
+'celebrity', 'famous', 'party'
